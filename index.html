@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Mokepon</title>
+</head>
+
+<body>
+    <section id="seleccionar-mascota">
+
+        <h1 class="titulo">Mokepon</h1>
+
+        <h2 class="subtitulo">Elige tu mascota: </h2>
+
+        <div class="tajetas">
+            <label class="tarjeta-mokepon" for="hipoge">
+                <p>Hipoge</p>
+                <img src="assets/hipo.png" alt="" srcset="">
+            </label>
+            <input type="radio" name="mascota" id="hipoge" value="Hipoge">
+
+            <label class="tarjeta-mokepon" for="capipepo">
+                <p>Capipepo</p>
+                <img src="./assets/capipepo.png" alt="" srcset="">
+            </label>
+            <input type="radio" name="mascota" id="capipepo" value="Capipepo">
+
+            <label class="tarjeta-mokepon" for="ratigueya">
+                <p>Ratigueya</p>
+                <img src="./assets/rati.png" alt="" srcset="">
+            </label>
+            <input type="radio" name="mascota" id="ratigueya" value="Ratigueya">
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">MOKEPON !</h1>
+
+        <h2>Elige tu ataque: </h2>
+
+        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+
+        <p>
+            <button id="boton-fuego">Fuego🔥</button>
+            <button id="boton-agua">Agua💧</button>
+            <button id="boton-tierra">Tierra🌱</button>
+        </p>
+    </section>
+
+    <section id="mensaje">
+    </section>
+
+    <section id="reiniciar">
+        <button id="boton-reiniciar">reiniciar</button>
+    </section>
+
+
+    <script src="./js/mokepon.js"></script>
+</body>
+
+</html>
