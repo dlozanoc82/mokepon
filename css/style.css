@@ -45,7 +45,16 @@ body {
 }
 
 input {
-    display: none;
+     display: none; 
+     cursor: pointer;
+}
+
+input + label {
+    cursor: pointer;
+}
+
+input:checked + label {
+    background-color: #5d8bf4;
 }
 
 #boton-mascota {
