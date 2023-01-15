@@ -37,7 +37,7 @@ function seleccionarMascotaJugador() {
     let seleccionarMascota = document.querySelector('input[name="mascota"]:checked');
     let spanMascotaJugador = document.getElementById('mascota-jugador');
     let sectionSeleccionarAtaque = document.getElementById('seleccionar-ataque');
-    sectionSeleccionarAtaque.style.display = 'block';
+    sectionSeleccionarAtaque.style.display = 'flex';
      let sectionSeleccionarMascota = document.getElementById('seleccionar-mascota');
      sectionSeleccionarMascota.style.display = 'none';
     
