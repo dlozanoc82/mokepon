@@ -22,7 +22,7 @@ body {
     font-size: 24px;
 }
 
-.tajetas{
+.tajetas, .btns-ataques{
     display: flex;
     gap: 10px;
 }
@@ -94,5 +94,24 @@ input {
 
 .ataques {
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 110px 110px;
+    color: white;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 360px){
+    .tajetas, .btns-ataques{
+        flex-direction: column;
+    }
 }
