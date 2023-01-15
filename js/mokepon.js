@@ -142,28 +142,31 @@ function revisarVidas() {
 function crearMensaje(resultado) {
 
     //Contenedor Padre
-    let seccionMensajes = document.getElementById('mensaje');
+    let seccionMensajes = document.getElementById('resultado');
+    let ataquesDelJugador = document.getElementById('ataques-del-jugador');
+    let ataquesDelEnemigo = document.getElementById('ataques-del-enemigo');
 
-    //Creacion y edicion del contenedor Hijo
-    let parrafo = document.createElement('p');
-    parrafo.innerHTML = 'Tu mascota atacó con: ' + ataqueJugador +  ' la mascota del enemigo atacó con: '+ ataqueEnemigo +' '+resultado;
+    let nuevoAtaqueDelJugador = document.createElement('p');
+    let nuevoAtaqueDelEnemigo = document.createElement('p');
+
+    seccionMensajes.innerHTML = resultado;
+    nuevoAtaqueDelJugador.innerHTML = ataqueJugador;
+    nuevoAtaqueDelEnemigo.innerHTML = ataqueEnemigo;
 
     //Agregamos el contendeor hijo al contenedor padre
-    seccionMensajes.appendChild(parrafo);
+    ataquesDelJugador.appendChild(nuevoAtaqueDelJugador);
+    ataquesDelEnemigo.appendChild(nuevoAtaqueDelEnemigo);
 
 }
 
 function crearMensajeFinal(resultadoFinal) {
 
     //Contenedor Padre
-    let seccionMensajes = document.getElementById('mensaje');
+    let seccionMensajes = document.getElementById('resultado');
 
     //Creacion y edicion del contenedor Hijo
-    let parrafo = document.createElement('p');
-    parrafo.innerHTML = resultadoFinal;
+    seccionMensajes.innerHTML = resultadoFinal;
 
-    //Agregamos el contendeor hijo al contenedor padre
-    seccionMensajes.appendChild(parrafo);
 
     let botonFuego = document.getElementById('boton-fuego');
     botonFuego.disabled = true;
