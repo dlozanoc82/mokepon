@@ -47,6 +47,9 @@ class Mokepon {
 let hipoge = new Mokepon('Hipoge', 'assets/hipo.png', 5)
 let capipepo = new Mokepon('Capipepo', '/assets/capipepo.png', 5)
 let ratigueya = new Mokepon('Ratigueya', './assets/rati.png', 5)
+let langostelvis = new Mokepon('Langostelvis', './assets/langostelvis.png', 5)
+let pydos = new Mokepon('Pydos', './assets/pydos.png', 5)
+let tucapalma = new Mokepon('Tucapalma', './assets/tucapalma.png', 5)
 
 hipoge.ataques.push(
     { nombre: '💧', id: 'boton-agua' },
@@ -73,7 +76,31 @@ ratigueya.ataques.push(
     { nombre: '🌱', id: 'boton-tierra' }
 )
 
-mokepones.push(hipoge, capipepo, ratigueya);
+langostelvis.ataques.push(
+    { nombre: '🔥', id: 'boton-fuego'},
+    { nombre: '🔥', id: 'boton-fuego'},
+    { nombre: '🔥', id: 'boton-fuego'},
+    { nombre: '💧', id: 'boton-agua' },
+    { nombre: '🌱', id: 'boton-tierra' }
+)
+
+pydos.ataques.push(
+    { nombre: '💧', id: 'boton-agua' },
+    { nombre: '💧', id: 'boton-agua' },
+    { nombre: '💧', id: 'boton-agua' },
+    { nombre: '🔥', id: 'boton-fuego'},
+    { nombre: '🌱', id: 'boton-tierra' }
+)
+
+tucapalma.ataques.push(
+    { nombre: '🌱', id: 'boton-tierra' },
+    { nombre: '🌱', id: 'boton-tierra' },
+    { nombre: '🌱', id: 'boton-tierra' },
+    { nombre: '💧', id: 'boton-agua' },
+    { nombre: '🔥', id: 'boton-fuego'},
+)
+
+mokepones.push(hipoge, capipepo, ratigueya, langostelvis, pydos, tucapalma);
 
 function aleatorio(min, max) {
      return Math.floor(Math.random() * (max - min + 1) + min)
