@@ -121,6 +121,15 @@ input:checked + label {
     margin-bottom: 0;
 }
 
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa{
+    border: 2px solid white;
+}
 
 @media (max-width: 360px){
     .tajetas, .btns-ataques{

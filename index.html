@@ -22,29 +22,19 @@
         <h2 class="subtitulo">Elige tu mascota: </h2>
 
         <div id="contenedor-tarjetas" class="tajetas">
-
-            <!-- <input type="radio" name="mascota" id="hipoge" value="Hipoge">
-            <label class="tarjeta-mokepon" for="hipoge">
-                <p>Hipoge</p>
-                <img src="assets/hipo.png" alt="" srcset="">
-            </label>
-
-            <input type="radio" name="mascota" id="capipepo" value="Capipepo">
-            <label class="tarjeta-mokepon" for="capipepo">
-                <p>Capipepo</p>
-                <img src="./assets/capipepo.png" alt="" srcset="">
-            </label>
-
-            <input type="radio" name="mascota" id="ratigueya" value="Ratigueya">
-            <label class="tarjeta-mokepon" for="ratigueya">
-                <p>Ratigueya</p>
-                <img src="./assets/rati.png" alt="" srcset="">
-            </label> -->
-
         </div>
 
         <button id="boton-mascota">Seleccionar</button>
 
+    </section>
+
+    <section id="ver-mapa">
+        <h1 class="titulo">Recorre el mapa con tu Mokepon</h1>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
     </section>
 
     <section id="seleccionar-ataque">
@@ -53,9 +43,6 @@
         <h2 class="subtitulo">Elige tu ataque: </h2>
 
         <div id="contenedor-btns" class="btns-ataques">
-            <!-- <button id="boton-fuego" class="btn-ataque">Fuego🔥</button>
-            <button id="boton-agua" class="btn-ataque">Agua💧</button>
-            <button id="boton-tierra" class="btn-ataque">Tierra🌱</button> -->
         </div>
 
 
